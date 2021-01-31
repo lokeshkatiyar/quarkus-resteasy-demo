@@ -3,7 +3,7 @@
 This project uses Open JDK 11, Quarkus(the Supersonic Subatomic Java Framework), Docker and Maven 3.6.3+.
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
-## Keycloak installaton using docker
+## Keycloak installation using docker
 For Authorization and authentication this project is using Keycloak for realm.
 to install keycloak
 ```shell script

@@ -2,7 +2,6 @@ package com.lok;
 
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
-import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
@@ -64,7 +63,6 @@ public class CountryResource {
                         "Content-Type","application/json" ,
                         "Accept","application/json")
                 .build();
-        String response = client.send(request, HttpResponse.BodyHandlers.ofString()).body();
-        return response;
+        return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
     }
 }

@@ -62,7 +62,6 @@ public class StateResource {
                         "Content-Type","application/json" ,
                         "Accept","application/json")
                 .build();
-        String response = client.send(request, HttpResponse.BodyHandlers.ofString()).body();
-        return response;
+        return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
     }
 }
