@@ -12,10 +12,12 @@ public class AirportResourceTest {
 
     @Test
     public void testHelloEndpoint() {
+
         given()
-          .when().get("/api/v1/single?iata=JKF")
-          .then()
-             .statusCode(200);
+                .auth().oauth2(Tokens.ADMIN_TOKEN)
+                .when().get("/api/v1/single?iata=JKF")
+                .then()
+                .statusCode(200);
     }
 
 }

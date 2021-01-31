@@ -11,9 +11,10 @@ public class StateResourceTest {
     @Test
     public void testHelloEndpoint() {
         given()
-          .when().get("/api/v1/states?country=IN")
-          .then()
-             .statusCode(200);
+                .auth().oauth2(Tokens.ADMIN_TOKEN)
+                .when().get("/api/v1/states?country=IN")
+                .then()
+                .statusCode(200);
     }
 
 }
