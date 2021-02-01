@@ -33,4 +33,11 @@ public class Constants {
 			.ofNullable(System.getenv().get("URL"))
 			.orElse("https://www.air-port-codes.com/api/v1");
 
+	public static final String TOKEN_API_CREDENTIALS = Optional
+			.ofNullable(System.getenv().get("TOKEN_API_CREDENTIALS"))
+			.orElse("Basic YmFja2VuZC1zZXJ2aWNlOnNlY3JldA==");
+
+	public static final String TOKEN_URL=Optional
+			.ofNullable(System.getenv().get("TOKEN_URL"))
+			.orElse("http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/token");
 }
