@@ -55,7 +55,7 @@ You can then execute your native executable with: `./target/rest-api-demo-1.0.0-
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
 
-##Generate token for the rest api
+##Generate token for the rest api, please use postman with the following parameter
 For 'alice' user
 ``` shell script
 curl -X POST \
