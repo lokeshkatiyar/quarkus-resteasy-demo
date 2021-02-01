@@ -63,7 +63,6 @@ curl -X POST \
   -H 'authorization: Basic YmFja2VuZC1zZXJ2aWNlOnNlY3JldA==' \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/x-www-form-urlencoded' \
-  -H 'postman-token: 8aaf6eec-d8f8-3945-2a90-fc8ca386a955' \
   -d 'username=alice&password=alice&grant_type=password'
 ```
 
@@ -74,6 +73,5 @@ curl -X POST \
   -H 'authorization: Basic YmFja2VuZC1zZXJ2aWNlOnNlY3JldA==' \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/x-www-form-urlencoded' \
-  -H 'postman-token: d06e8507-9bca-3ef7-2304-114fcbce1582' \
   -d 'username=admin&password=admin&grant_type=password'
 ```
